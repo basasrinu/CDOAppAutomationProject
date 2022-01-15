@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite" parallel="false" >
+
+    <test  name = "test1">
+        <parameter name="deviceName" value="Samsung Galaxy S9"/>
+        <parameter name="version" value="8"/>
+        <parameter name="udid" value="22e0fa38820b7ece"/>
+        <parameter name="port" value="4723"/>
+        <classes>
+            <class name="CDO.BaseSetup"/>
+        </classes>
+    </test>
+
+     <test name = "Sams Galaxy S9 edge Direct">
+       <parameter name="deviceName" value="Samsung Galaxy S9"/>
+       <parameter name="version" value="8"/>
+       <parameter name="udid" value="22e0fa38820b7ece"/>
+       <parameter name="port" value="4723"/>
+         <parameter name="upgrade" value="true"/>
+       <classes>
+       <class name="DirectInstall"/>
+      </classes>
+   </test>
+
+    <test  name = "Samsung S9 edge Upgrade">
+        <parameter name="deviceName" value="Samsung Galaxy S9"/>
+        <parameter name="version" value="8"/>
+        <parameter name="udid" value="22e0fa38820b7ece"/>
+        <parameter name="port" value="4723"/>
+        <parameter name="upgrade" value="true"/>
+        <classes>
+            <class name="Upgrade"/>
+        </classes>
+    </test>
+    <!--test  name = "Samsung S10 plus direct">
+        <parameter name="deviceName" value="Samsung S10 plus"/>
+        <parameter name="version" value="10"/>
+        <parameter name="udid" value="R58MB21FA1M"/>
+        <parameter name="port" value="4723"/>
+        <parameter name="upgrade" value="false"/>
+        <classes>
+        <class name="DirectInstall"/>
+       </classes>
+    </test>-->
+
+    <!--test  name = "Samsung S10 plus upgrade">
+        <parameter name="deviceName" value="Samsung S10 plus"/>
+        <parameter name="version" value="10"/>
+        <parameter name="udid" value="R58MB21FA1M"/>
+        <parameter name="port" value="4723"/>
+        <parameter name="upgrade" value="true"/>
+        <classes>
+            <class name="Upgrade"/>
+        </classes>
+    </test>-->
+    <!--<test  name = "Huawei Direct">
+        <parameter name="deviceName" value="Huawei"/>
+        <parameter name="version" value="9"/>
+        <parameter name="udid" value="9WV7N18426054776"/>
+        <parameter name="port" value="4723"/>
+        <parameter name="upgrade" value="false"/>
+        <classes>
+            <class name="DirectInstall"/>
+        </classes>
+    </test>-->
+    <!--<test  name = "Huawei Upgrade">
+        <parameter name="deviceName" value="Huawei"/>
+        <parameter name="version" value="9"/>
+        <parameter name="udid" value="9WV7N18426054776"/>
+        <parameter name="port" value="4723"/>
+        <parameter name="upgrade" value="true"/>
+        <classes>
+            <class name="Upgrade"/>
+        </classes>
+    </test>-->
+    <!--<test  name = "Samsung S6 Direct">
+        <parameter name="deviceName" value="S6 Android version 7"/>
+        <parameter name="version" value="7"/>
+        <parameter name="udid" value="03157df39b5db03f"/>
+        <parameter name="port" value="4723"/>
+        <parameter name="upgrade" value="false"/>
+        <classes>
+            <class name="DirectInstall"/>
+        </classes>
+    </test>
+    <test  name = "Samsung S6 Upgrade">
+        <parameter name="deviceName" value="S6 Android version 7"/>
+        <parameter name="version" value="7"/>
+        <parameter name="udid" value="03157df39b5db03f"/>
+        <parameter name="port" value="4723"/>
+        <parameter name="upgrade" value="true"/>
+        <classes>
+            <class name="Upgrade"/>
+        </classes>
+    </test>-->
+
+</suite>

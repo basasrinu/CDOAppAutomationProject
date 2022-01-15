@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.automation.app'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+test {
+    useTestNG()
+}
+dependencies {
+    implementation 'io.appium:java-client:7.5.1'
+    implementation 'junit:junit:4.13.2'
+    implementation 'org.testng:testng:7.4.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'com.relevantcodes:extentreports:2.41.2'
+    compile "commons-io:commons-io:+"
+}
